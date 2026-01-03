@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Roboto Mono", sans-serif;
+  --font-serif: "Roboto Mono", sans-serif;
+  --font-mono: "Roboto Mono", sans-serif;
+
+  --font-roboto: "Roboto Mono", sans-serif;
+
+  --color-inactive: oklch(1 0 0 / 0.39);
+
+  --ease-navBar: cubic-bezier(0.19, 0.69, 0.86, 0.39);
+}
+
+span {
+  color: white;
+}
+
+.active-navLink {
+  color: rgb(255, 255, 255);
+}
+
+body {
+  background-color: black;
+}

@@ -25,3 +25,9 @@ span {
 body {
   background-color: black;
 }
+
+.lil-gui {
+  left: 0;
+  bottom: 0;
+  top: unset !important;
+}

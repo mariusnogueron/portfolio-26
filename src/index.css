@@ -2,6 +2,11 @@
 
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Avant";
+  src: url("./fonts/Avant.woff2");
+}
+
 @theme {
   --font-sans: "Roboto Mono", sans-serif;
   --font-serif: "Roboto Mono", sans-serif;
@@ -9,9 +14,27 @@
 
   --font-roboto: "Roboto Mono", sans-serif;
 
+  --font-avant: "Avant", sans-serif;
+
   --color-inactive: oklch(1 0 0 / 0.39);
 
   --ease-navBar: cubic-bezier(0.19, 0.69, 0.86, 0.39);
+}
+
+@layer components {
+  .color-r3f {
+    background: #1f4037; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #99f2c8,
+      #1f4037
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #99f2c8,
+      #1f4037
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
 }
 
 span {
@@ -30,4 +53,10 @@ body {
   left: 0;
   bottom: 0;
   top: unset !important;
+}
+
+.grid-stagger {
+  height: 100svh;
+  width: 11svw;
+  background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(148, 148, 148, 1) 100%);
 }

@@ -17,7 +17,3 @@ export default function Home() {
     </>
   );
 }
-
-!window.addEventListener("load", () => {
-  console.log("load");
-});

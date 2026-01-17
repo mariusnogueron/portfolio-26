@@ -6,19 +6,39 @@ import Home from "./Home.jsx";
 import Realisations from "./Realisations.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Nav from "./Nav.jsx";
+import Works from "./Works.jsx";
+import About from "./About.jsx";
+import LoadAnimation from "./LoadAnimation.jsx";
+import CreativeTemplate from "./CreativeTemplate.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: (
+      <>
+        <LoadAnimation />
+        <Home />
+        <CreativeTemplate />
+      </>
+    ),
   },
   {
     path: "/realisations",
-    element: <Nav />,
+    element: (
+      <>
+        <Nav />
+        <Works />
+      </>
+    ),
   },
   {
     path: "/a-propos",
-    element: <Nav />,
+    element: (
+      <>
+        <Nav />
+        <About />
+      </>
+    ),
   },
 ]);
 

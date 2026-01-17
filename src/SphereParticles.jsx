@@ -1,8 +1,10 @@
 import { useRef, useMemo, useEffect } from "react";
 import { useFrame, useThree } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import { GradientTexture, OrbitControls } from "@react-three/drei";
 import * as THREE from "three";
 import GUI from "lil-gui";
+import { Text } from "@react-three/drei";
+import { GradientType } from "@react-three/drei";
 
 export default function SphereParticles() {
   const pointsRef = useRef();
@@ -107,6 +109,16 @@ export default function SphereParticles() {
       <points ref={pointsRef} geometry={geometry}>
         <pointsMaterial size={0.02} />
       </points>
+      {/* <Text fontSize={1} position-z={"-2"} position-y={2}>
+        Marius Nogueron
+        <meshBasicMaterial>
+          <GradientTexture
+            stops={[0, 1]}
+            colors={["#D9D9D9", "#787878"]}
+            type={GradientType.Radial}
+          ></GradientTexture>
+        </meshBasicMaterial>
+      </Text> */}
     </>
   );
 }

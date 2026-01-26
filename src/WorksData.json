@@ -1,0 +1,132 @@
+{
+  "Works": [
+    {
+      "id": "01",
+      "type": "Dev",
+      "name": "Portfolio",
+      "slug": "portfolio",
+      "img": "./excel.jpg",
+      "date": "2026"
+    },
+    {
+      "id": "02",
+      "type": "UX/UI",
+      "name": "Maddelaine Marcelle",
+      "slug": "maddelaine-marcelle",
+      "img": "./excel.jpg",
+      "date": "2025"
+    },
+    {
+      "id": "03",
+      "type": "Photo",
+      "name": "Portfolio Photo",
+      "slug": "portfolio-photo",
+      "img": "./excel.jpg",
+      "date": "2025"
+    },
+    {
+      "id": "04",
+      "type": "Motion",
+      "name": "Love",
+      "slug": "love-motion",
+      "img": "./excel.jpg",
+      "date": "2025"
+    },
+    {
+      "id": "05",
+      "type": "UX/UI",
+      "name": "Maddelaine Marcelle",
+      "slug": "",
+      "img": "./excel.jpg",
+      "date": "2025"
+    },
+    {
+      "id": "06",
+      "type": "Vidéo",
+      "name": "Turbofilm",
+      "slug": "turbofilm-2025",
+      "img": "./excel.jpg",
+      "date": "2025"
+    },
+    {
+      "id": "07",
+      "type": "3D / Unity",
+      "name": "Shooter",
+      "slug": "shooter",
+      "img": "./excel.jpg",
+      "date": "2025"
+    },
+    {
+      "id": "08",
+      "type": "Dev",
+      "name": "CCHMV",
+      "slug": "cchmv",
+      "img": "./excel.jpg",
+      "date": "2025"
+    },
+    {
+      "id": "09",
+      "type": "Dev",
+      "name": "Bastille Grenoble",
+      "slug": "bastille-grenoble",
+      "img": "./excel.jpg",
+      "date": "2025"
+    },
+    {
+      "id": "10",
+      "type": "Graphisme / 3D",
+      "name": "Affiches",
+      "slug": "affiches",
+      "img": "./excel.jpg",
+      "date": "2025"
+    },
+    {
+      "id": "11",
+      "type": "Motion",
+      "name": "Iphone",
+      "slug": "iphone-motion",
+      "img": "./excel.jpg",
+      "date": "2025"
+    },
+    {
+      "id": "12",
+      "type": "3D",
+      "name": "Ocean",
+      "slug": "ocean",
+      "img": "./excel.jpg",
+      "date": "2025"
+    },
+    {
+      "id": "13",
+      "type": "Dev",
+      "name": "Festival MMI",
+      "slug": "festival-mmi-2025",
+      "img": "./excel.jpg",
+      "date": "2023"
+    },
+    {
+      "id": "14",
+      "type": "VFX",
+      "name": "Particules audio réactives",
+      "slug": "particules-audio",
+      "img": "./excel.jpg",
+      "date": "2025"
+    },
+    {
+      "id": "15",
+      "type": "Vidéo",
+      "name": "Turbofilm",
+      "slug": "turbofilm-2026",
+      "img": "./excel.jpg",
+      "date": "2026"
+    },
+    {
+      "id": "16",
+      "type": "Hébergement",
+      "name": "Environnement",
+      "slug": "environnement-hebergement",
+      "img": "./excel.jpg",
+      "date": "2026"
+    }
+  ]
+}

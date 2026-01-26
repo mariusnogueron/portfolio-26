@@ -37,10 +37,6 @@
   }
 }
 
-span {
-  color: white;
-}
-
 .active-navLink {
   color: rgb(255, 255, 255);
 }
@@ -50,13 +46,24 @@ body {
 }
 
 .lil-gui {
-  left: 0;
+  right: 0;
   bottom: 0;
   top: unset !important;
 }
 
 .grid-stagger {
+  width: calc(100svw / 9);
   height: 100svh;
-  width: 11svw;
-  background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(148, 148, 148, 1) 100%);
+  filter: contrast(120%) brightness(100%);
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 255, 1),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(./img/feTurbulenceRectangle.svg);
+}
+
+::selection {
+  color: blue;
+  background-color: white;
 }

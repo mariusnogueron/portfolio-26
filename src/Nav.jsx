@@ -18,13 +18,13 @@ export default function Nav() {
           >
             Home
           </NavLink>
-          <span className="text-sm text-inactive hover:text-white select-all">
+          <span className="text-sm select-text bg-white cursor-text text-blue-700">
             Marius Nogueron
           </span>
         </div>
 
         <div className="w-fit flex flex-col gap-0.5">
-          <span className="text-sm select-none">Réalisations</span>
+          <span className="text-sm select-none text-white">Réalisations</span>
           <NavLink
             to={"/realisations"}
             className={({ isActive, isPending }) => {
@@ -36,7 +36,7 @@ export default function Nav() {
               return `${state} group text-inactive overflow-hidden select-none text-sm hover:text-white hover:transition duration-75 ease-in-out  flex items-center gap-1 relative pl-5`;
             }}
           >
-            <div className="flex flex-col gap-2 absolute bottom-0.5 group-hover:translate-y-[calc(50%+4px)] transform duration-200 ease-in-out left-0 motion-reduce:transition-none">
+            <div className="flex flex-col gap-2 text-white absolute bottom-0.5 group-hover:translate-y-[calc(50%+4px)] transform duration-200 ease-in-out left-0 motion-reduce:transition-none">
               <Circle className="" size={16} />
               <Circle className="" size={16} />
             </div>
@@ -45,7 +45,7 @@ export default function Nav() {
         </div>
 
         <div className="flex flex-col w-fit">
-          <span className="text-sm select-none">Contact</span>
+          <span className="text-sm select-none text-white">Contact</span>
           <div className="flex text-sm justify-between gap-0.5">
             <a
               href="https://www.instagram.com/marius.nog/"

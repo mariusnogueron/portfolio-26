@@ -63,6 +63,7 @@ export default function SphereParticles() {
     const discriminant = b * b - 4 * a * c;
 
     if (discriminant >= 0) {
+      document.querySelector("body").style.cursor = "crosshair";
       const t = (-b - Math.sqrt(discriminant)) / (2.0 * a);
       mouse3D.current
         .copy(ray.origin)
@@ -90,6 +91,8 @@ export default function SphereParticles() {
         }
       }
     } else {
+      document.querySelector("body").style.cursor = "default";
+
       for (let i = 0; i < count; i++) {
         const i3 = i * 3;
         positions[i3] += (originalPositions[i3] - positions[i3]) * 0.05;
@@ -105,20 +108,10 @@ export default function SphereParticles() {
 
   return (
     <>
-      <OrbitControls enableDamping dampingFactor={0.05} />
+      <OrbitControls enableDamping enableZoom={false} dampingFactor={0.05} />
       <points ref={pointsRef} geometry={geometry}>
-        <pointsMaterial size={0.02} />
+        <pointsMaterial color={"blue"} size={0.02} />
       </points>
-      {/* <Text fontSize={1} position-z={"-2"} position-y={2}>
-        Marius Nogueron
-        <meshBasicMaterial>
-          <GradientTexture
-            stops={[0, 1]}
-            colors={["#D9D9D9", "#787878"]}
-            type={GradientType.Radial}
-          ></GradientTexture>
-        </meshBasicMaterial>
-      </Text> */}
     </>
   );
 }

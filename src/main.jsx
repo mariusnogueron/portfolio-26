@@ -10,6 +10,7 @@ import Works from "./Works.jsx";
 import About from "./About.jsx";
 import LoadAnimation from "./LoadAnimation.jsx";
 import CreativeTemplate from "./CreativeTemplate.jsx";
+import EachWork from "./EachWork.jsx";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,15 @@ const router = createBrowserRouter([
       <>
         <Nav />
         <Works />
+      </>
+    ),
+  },
+  {
+    path: "/realisations/:workId",
+    element: (
+      <>
+        <Nav />
+        <EachWork />
       </>
     ),
   },

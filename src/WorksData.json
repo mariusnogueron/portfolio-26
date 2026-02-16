@@ -1,132 +1,234 @@
 {
   "Works": [
     {
-      "id": "01",
-      "type": "Dev",
-      "name": "Portfolio",
-      "slug": "portfolio",
-      "img": "./excel.jpg",
-      "date": "2026"
-    },
-    {
-      "id": "02",
       "type": "UX/UI",
       "name": "Maddelaine Marcelle",
       "slug": "maddelaine-marcelle",
-      "img": "./excel.jpg",
-      "date": "2025"
+      "img": "./img/maddelaine/maddelaine-home.webp",
+      "firstimg": "./img/maddelaine/maddelaine-home.webp",
+      "date": "2025",
+      "tags": ["figma"],
+      "content": "Une amie s'est lancée dans la réalisation de sac fait main. Basé sur certains critères qu'elle m'a donnée, j'ai transformé son idée en réalisation concrète prêt à être intégrée.",
+      "category": ["Client", "Projet personnel"],
+      "moremedias": [
+        "./img/maddelaine/maddelaine-home.webp",
+        "./img/maddelaine/maddelaine-figma-desk-components.webp",
+        "./img/maddelaine/maddelaine-marque.webp",
+        "./img/maddelaine/maddelaine-each-product.webp",
+        "./img/maddelaine/maddelaine-paiement.webp",
+        "./img/maddelaine/maddelaine-panier.webp",
+        "./img/maddelaine/maddelaine-produits.webp",
+        "./img/maddelaine/maddelaine-panier-mobile.webp",
+        "./img/maddelaine/maddelaine-paiement-mobile.webp",
+        "./img/maddelaine/maddelaine-marque-mobile.webp",
+        "./img/maddelaine/maddelaine-home-mobile-1.webp",
+        "./img/maddelaine/maddelaine-home-mobile-2.webp",
+        "./img/maddelaine/maddelaine-each-product-mobile.webp"
+      ],
+      "iframe": "https://www.figma.com/design/V0hvgXxh6dqAZlrmfiCXW9/IDEAS?node-id=77-70&t=hxNPXYpMpSwtRiCB-1"
     },
     {
-      "id": "03",
       "type": "Photo",
       "name": "Portfolio Photo",
       "slug": "portfolio-photo",
-      "img": "./excel.jpg",
-      "date": "2025"
+      "img": "./img/portfolio-photo/pic.webp",
+      "firstimg": "./img/portfolio-photo/pic.webp",
+      "date": "2025",
+      "tags": ["lightroom"],
+      "content": "Une collection de tout ce que je sais faire en photographie.",
+      "category": ["Projet personnel"],
+      "iframe": "https://photo.mariusnogueron.fr"
     },
     {
-      "id": "04",
       "type": "Motion",
       "name": "Love",
       "slug": "love-motion",
-      "img": "./excel.jpg",
-      "date": "2025"
+      "img": "./img/love/pic.webp",
+      "firstimg": "./img/love/pic.webp",
+      "date": "2025",
+      "tags": ["after effect"],
+      "content": "Utilisation d'un Mesh Warp et d'un CC BALL ACTION pour les effets principaux.",
+      "category": ["Projet personnel"],
+      "moremedias": ["./img/love/love-pic.webp"],
+      "iframe": "https://youtube.com/shorts/j7xs411uyKo"
     },
     {
-      "id": "05",
       "type": "UX/UI",
-      "name": "Maddelaine Marcelle",
-      "slug": "",
-      "img": "./excel.jpg",
-      "date": "2025"
+      "name": "Bygin",
+      "slug": "bygin",
+      "img": "./img/bygin/bygin-home-desk.webp",
+      "firstimg": "./img/bygin/bygin-home-desk.webp",
+      "date": "2025",
+      "tags": ["figma", "vuejs", "frontend"],
+      "content": "Imagination d'une marque fictive qui réalise des vinyles. En plus d'avoir réalisé l'entièreté de la maquette, j'ai créé le site web.",
+      "category": ["Projet personnel"],
+      "moremedias": [
+        "./img/bygin/bygin-artists-desk.webp",
+        "./img/bygin/bygin-join-desk.webp"
+      ],
+      "iframe": "https://bigyn.vercel.app/"
     },
     {
-      "id": "06",
       "type": "Vidéo",
       "name": "Turbofilm",
       "slug": "turbofilm-2025",
-      "img": "./excel.jpg",
-      "date": "2025"
+      "img": "./img/turbofilm-25/turbofilm-25.webp",
+      "firstimg": "./img/turbofilm-25/turbofilm-25-1.webp",
+      "date": "2025",
+      "tags": ["premiere pro"],
+      "content": "Réalisation d'un film de 5 minutes en 24h pour Turbofilm 13ème édition. Un événement organisé par le Service Universitaire d’Action Culturelle de l’Université de Reims Champagne-Ardenne (URCA), il vise à promouvoir la réalisation de courts-métrages en France",
+      "category": ["Projet personnel", "Travail de Groupe"],
+      "role": ["Réalisateur", "Chef Opérateur", "Ingé son", "Monteur"],
+      "moremedias": [
+        "./img/turbofilm-25/turbofilm-25-2.webp",
+        "./img/turbofilm-25/turbofilm-25.webp"
+      ],
+      "iframe": "https://www.youtube.com/watch?v=4G_c363Mf6k"
     },
+
     {
-      "id": "07",
-      "type": "3D / Unity",
-      "name": "Shooter",
-      "slug": "shooter",
-      "img": "./excel.jpg",
-      "date": "2025"
-    },
-    {
-      "id": "08",
       "type": "Dev",
-      "name": "CCHMV",
-      "slug": "cchmv",
-      "img": "./excel.jpg",
-      "date": "2025"
+      "name": "ThreeJs Journey",
+      "slug": "three-js-journey",
+      "img": "./img/threejs/house.webp",
+      "firstimg": "./img/threejs/house.webp",
+      "date": "2025",
+      "tags": ["threejs", "frontend"],
+      "content": "Pour ce projet, utilisation de ThreeJS natif. Les textures proviennent de polyhaven.com est sont sous licence CC Zero. Le sujet ici n'est pas sur la modélisation 3D à proprement parlé mais davantage du portage de la 3D sur le web",
+      "iframe": "https://3d-house-chi.vercel.app/"
     },
     {
-      "id": "09",
       "type": "Dev",
-      "name": "Bastille Grenoble",
-      "slug": "bastille-grenoble",
-      "img": "./excel.jpg",
-      "date": "2025"
+      "name": "Hébergement",
+      "slug": "environnement-hebergement",
+      "img": "./img/hebergement/apache-sites-available.webp",
+      "firstimg": "./img/hebergement/apache-sites-available.webp",
+      "date": "2025",
+      "tags": ["apache", "debian", "vps", "nas"],
+      "content": "J'ai un VPS avec plusieurs noms de domaines, me servant chacun à des choses différentes. photos.mariusnogueron.fr qui est mon portfolio photo. lab.mariusnogueron.fr, mon lieu d'expérimentation. https://investir.mariusnogueron.fr/ un guide pour débuter l'investissement en bourse. J'ai également mis en place plusieurs CI/CD pour le déploiement de ces projets. Des Dockerfiles pour le suivi des visites sur mes sites. J'ai également mis en place un NAS pour le stockage et la mise en commun de mes données.",
+      "category": ["Projet personnel"]
     },
     {
-      "id": "10",
       "type": "Graphisme / 3D",
       "name": "Affiches",
       "slug": "affiches",
-      "img": "./excel.jpg",
-      "date": "2025"
+      "img": "./img/affiches/1.webp",
+      "firstimg": "./img/affiches/1.webp",
+      "date": "2025",
+      "tags": ["photoshop", "illustrator", "blender"],
+      "content": "Objectif de création en un temps limité de 4h. Design des affiches et 3D.",
+      "category": ["Projet personnel"],
+      "moremedias": [
+        "./img/affiches/1.webp",
+        "./img/affiches/2.webp",
+        "./img/affiches/3.webp",
+        "./img/affiches/4.webp"
+      ],
+      "iframe": "https://youtube.com/shorts/rPnMTGV2I8s"
     },
     {
-      "id": "11",
       "type": "Motion",
       "name": "Iphone",
       "slug": "iphone-motion",
-      "img": "./excel.jpg",
-      "date": "2025"
+      "img": "./img/iphone/iphone-motion.webp",
+      "firstimg": "./img/iphone/iphone-motion.webp",
+      "date": "2025",
+      "tags": ["after effect"],
+      "content": "Motion avec l'UI kit de IOS",
+      "iframe": "https://youtube.com/shorts/NH6QR8Sk-BM"
     },
     {
-      "id": "12",
       "type": "3D",
       "name": "Ocean",
       "slug": "ocean",
-      "img": "./excel.jpg",
-      "date": "2025"
+      "img": "./img/ocean/ocean.webp",
+      "firstimg": "./img/ocean/ocean.webp",
+      "date": "2025",
+      "tags": ["blender"],
+      "content": "Simulation d'océan faite avec Blender. Ajout de ToonShader sur les vagues.",
+      "category": [""],
+      "iframe": "https://youtu.be/IyVXjwpgh2M"
     },
     {
-      "id": "13",
       "type": "Dev",
       "name": "Festival MMI",
-      "slug": "festival-mmi-2025",
-      "img": "./excel.jpg",
-      "date": "2023"
+      "slug": "festival-mmi-2024",
+      "img": "./img/festival-mmi-2024/merci-maman-desk.webp",
+      "firstimg": "./img/festival-mmi-2024/merci-maman-desk.webp",
+      "date": "2024",
+      "tags": ["frontend", "gsap"],
+      "content": "Création de la maquette et du site web. La démarche porte sur le fait de remercier les mères et l'importance qu'elles peuvent avoir sur les développement de leurs enfants",
+      "category": ["Projet personnel"],
+      "iframe": "https://festivalmmi.vercel.app/"
     },
     {
-      "id": "14",
       "type": "VFX",
       "name": "Particules audio réactives",
       "slug": "particules-audio",
-      "img": "./excel.jpg",
-      "date": "2025"
+      "img": "./img/touchdesigner/POINTCLOUD/pic.webp",
+      "firstimg": "./img/touchdesigner/POINTCLOUD/pic.webp",
+      "date": "2025",
+      "tags": ["touchdesigner", "scaniverse"],
+      "content": "Utilisation de scaniverse pour scanner en 3D l'environnement, puis export du fichier en PLY pour pouvoir l'exploiter sur touchdesigner et faire en sorte que les basses fassent bouger les coordonnées des points.",
+      "category": ["Projet personnel"],
+      "moremedias": [
+        "./img/touchdesigner/POINTCLOUD/pic.webp",
+        "./img/touchdesigner/POINTCLOUD/pic2.webp",
+        "./img/touchdesigner/POINTCLOUD/pic3.webp"
+      ],
+      "iframe": "https://youtu.be/LLFNdBqYUfM"
     },
     {
-      "id": "15",
+      "type": "VFX",
+      "name": "Audio Reactive Geometry",
+      "slug": "audio-reactive-geometry",
+      "img": "./img/touchdesigner/SOUNDREACTIVE/pic.webp",
+      "firstimg": "./img/touchdesigner/SOUNDREACTIVE/pic.webp",
+      "date": "2025",
+      "tags": ["touchdesigner", "scaniverse"],
+      "content": "Analyse du son en filtrant les basses, variation des normals appliqués au modèle 3D, permettant de le faire bouger au rythme de la musique",
+      "category": ["Projet personnel"],
+      "moremedias": [
+        "./img/touchdesigner/SOUNDREACTIVE/pic.webp",
+        "./img/touchdesigner/SOUNDREACTIVE/pic2.webp"
+      ],
+      "iframe": " https://youtu.be/hKYuEyl9LXM"
+    },
+    {
       "type": "Vidéo",
       "name": "Turbofilm",
       "slug": "turbofilm-2026",
-      "img": "./excel.jpg",
-      "date": "2026"
+      "img": "./img/turbofilm-26/turbofilm-26.webp",
+      "firstimg": "./img/turbofilm-26/turbofilm-26.webp",
+      "date": "2026",
+      "tags": ["premiere pro", "after effect"],
+      "content": "Réalisation d'un film de 5 minutes en 24h pour Turbofilm 14ème édition avec plusieurs contraintes et thème imposé. Un événement organisé par le Service Universitaire d’Action Culturelle de l’Université de Reims Champagne-Ardenne (URCA), il vise à promouvoir la réalisation de courts-métrages en France",
+      "category": ["Projet personnel", "Travail de Groupe"],
+      "iframe": "https://youtu.be/e19LRAUHs54?si=5G3Ld7f3B-HrZPPS"
     },
     {
-      "id": "16",
-      "type": "Hébergement",
-      "name": "Environnement",
-      "slug": "environnement-hebergement",
-      "img": "./excel.jpg",
-      "date": "2026"
+      "type": "Motion",
+      "name": "Vilk",
+      "slug": "vilk",
+      "img": "./img/vilk/vilk.webp",
+      "firstimg": "./img/vilk/vilk.webp",
+      "date": "2026",
+      "tags": ["after effect"],
+      "content": "Motion pour un artiste musical que j'apprécie",
+      "category": ["Projet personnel"],
+      "iframe": "https://youtu.be/rASXic0qfnE"
+    },
+    {
+      "type": "3D",
+      "name": "Donut",
+      "slug": "donut",
+      "img": "./img/donut/SCR-20260215-pxuj.png",
+      "firstimg": "./img/donut/SCR-20260215-pxuj.png",
+      "date": "2023",
+      "tags": ["Blender", "3D"],
+      "content": "Premier projet fait sur Blender",
+      "category": ["Projet personnel"],
+      "iframe": "https://youtube.com/shorts/Dqcuf_JCdxk"
     }
   ]
 }

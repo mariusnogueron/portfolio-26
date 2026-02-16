@@ -10,15 +10,19 @@ export default function SphereParticles() {
   const pointsRef = useRef();
   const { camera, size } = useThree();
 
+  const isMobile = size.width < 768;
+
   const params = useRef({
     radius: 1,
     strength: 0.05,
   });
 
   useEffect(() => {
+    if (isMobile) return;
     const gui = new GUI();
-    console.log(gui);
     gui.close();
+
+    gui.title("Amusez-vous ✳️");
 
     gui.add(params.current, "radius", 0.5, 3, 0.1).name("Rayon influence");
     gui.add(params.current, "strength", 0.01, 0.2, 0.01).name("Force");
@@ -26,17 +30,18 @@ export default function SphereParticles() {
     return () => {
       gui.destroy();
     };
-  }, []);
+  }, [isMobile]);
 
   const mouse = useRef(new THREE.Vector2());
   const mouse3D = useRef(new THREE.Vector3());
   const raycaster = useRef(new THREE.Raycaster());
 
   const { geometry, originalPositions } = useMemo(() => {
-    const geo = new THREE.SphereGeometry(2, 64, 64);
+    const segments = isMobile ? 32 : 64;
+    const geo = new THREE.SphereGeometry(2, segments, segments);
     const originalPos = new Float32Array(geo.attributes.position.array);
     return { geometry: geo, originalPositions: originalPos };
-  }, []);
+  }, [isMobile]);
 
   useEffect(() => {
     const handleMouseMove = (event) => {

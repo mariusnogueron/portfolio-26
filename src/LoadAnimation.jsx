@@ -12,7 +12,7 @@ export default function LoadAnimation() {
   }, []);
   return (
     <>
-      <div className="flex absolute z-10">
+      <div className="flex absolute z-50">
         <div className="grid-stagger"></div>
         <div className="grid-stagger"></div>
         <div className="grid-stagger"></div>

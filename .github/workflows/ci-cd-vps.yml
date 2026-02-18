@@ -28,4 +28,4 @@ jobs:
           port: ${{ secrets.PORT }}
           password: ${{ secrets.PASS }}
           source: "dist/*"
-          path: "/var/www/html"
+          target: "/var/www/html"

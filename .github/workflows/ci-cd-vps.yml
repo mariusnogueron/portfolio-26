@@ -27,6 +27,26 @@ jobs:
       - name: check dist file
         run: ls -R dist
 
+      - name: Test SSH + permissions VPS
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASS }}
+          script: |
+            echo "=== whoami ==="
+            whoami
+            echo "=== shell ==="
+            echo $SHELL
+            echo "=== home dir ==="
+            ls -la $HOME || echo "HOME introuvable"
+            echo "=== /tmp writable? ==="
+            touch /tmp/ci_test && echo "OK /tmp" && rm /tmp/ci_test || echo "FAIL /tmp"
+            echo "=== /var/www/html writable? ==="
+            touch /var/www/html/.ci_test && echo "OK /var/www/html" && rm /var/www/html/.ci_test || echo "FAIL /var/www/html"
+            echo "=== SFTP subsystem ==="
+            grep sftp /etc/ssh/sshd_config
+
       - name: Deployer sur VPS
         uses: appleboy/scp-action@v0.1.7
         with:

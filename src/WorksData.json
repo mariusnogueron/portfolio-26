@@ -94,7 +94,7 @@
       "firstimg": "./img/threejs/house.webp",
       "date": "2025",
       "tags": ["threejs", "frontend"],
-      "content": "Pour ce projet, utilisation de ThreeJS natif. Les textures proviennent de polyhaven.com est sont sous licence CC Zero. Le sujet ici n'est pas sur la modélisation 3D à proprement parlé mais davantage du portage de la 3D sur le web",
+      "content": "Pour ce projet, utilisation de ThreeJS natif. Les textures proviennent de polyhaven.com sont sous licence CC Zero. Le sujet ici n'est pas sur la modélisation 3D à proprement parlé mais davantage du portage de la 3D sur le web",
       "iframe": "https://3d-house-chi.vercel.app/"
     },
     {

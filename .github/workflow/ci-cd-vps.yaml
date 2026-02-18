@@ -1,0 +1,31 @@
+name: Push To Prod
+
+on:
+  push:
+    branch: main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v6
+
+      - name: Install Node.js
+        uses: actions/setup-node@v6
+
+      - name: NPM CI
+        run: npm ci
+
+      - name: NPM BUILD
+        run: npm run build
+
+      - name: Deployer sur VPS
+        uses: appleboy/scp-action@v1
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          port: ${{ secrets.PORT }}
+          password: ${{ secrets.PASS }}
+          source: "dist/*"
+          path: "/var/www/html/"

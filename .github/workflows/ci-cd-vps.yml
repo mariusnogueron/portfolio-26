@@ -34,7 +34,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASS }}
           source: "dist/*"
-          target: "/html/"
+          target: "/var/www/html/"
           strip_components: 1
-          tar_tmp_path: "/tmp/"
           debug: true

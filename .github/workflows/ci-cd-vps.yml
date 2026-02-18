@@ -20,6 +20,9 @@ jobs:
       - name: NPM BUILD
         run: npm run build
 
+      - name: check dist file
+        run: ls -R dist
+
       - name: Deployer sur VPS
         uses: appleboy/scp-action@v1
         with:

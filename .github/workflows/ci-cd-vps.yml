@@ -30,7 +30,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           port: ${{ secrets.PORT }}
           password: ${{ secrets.PASS }}
-          source: "dist/*"
-          target: "/var/www/html"
+
           script: |
             mkdir -p /var/www/html

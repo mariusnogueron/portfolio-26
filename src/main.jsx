@@ -12,6 +12,7 @@ import LoadAnimation from "./LoadAnimation.jsx";
 import CreativeTemplate from "./CreativeTemplate.jsx";
 import EachWork from "./EachWork.jsx";
 import PageTransition from "./PageTransition.jsx";
+import TutorialSphere from "./TutorialSphere.jsx";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,16 @@ const router = createBrowserRouter([
         <PageTransition />
         <Nav />
         <About />
+      </>
+    ),
+  },
+  {
+    path: "/tutoriel/sphere-threejs",
+    element: (
+      <>
+        <PageTransition />
+        <Nav />
+        <TutorialSphere />
       </>
     ),
   },

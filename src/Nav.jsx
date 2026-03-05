@@ -47,7 +47,6 @@ export default function Nav() {
 
   return (
     <>
-      {/* Desktop nav */}
       <nav className="hidden md:flex py-2 px-4 z-10 justify-between sticky top-0 mix-blend-difference">
         <div className="flex flex-col w-fit gap-0.5">
           <NavLink
@@ -76,6 +75,7 @@ export default function Nav() {
               <Circle size={16} />
             </div>
             Travaux &#9786;
+            <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse ml-1" />
           </NavLink>
         </div>
 
@@ -104,7 +104,6 @@ export default function Nav() {
         </div>
       </nav>
 
-      {/* Mobile nav */}
       <nav className="flex md:hidden py-3 px-4 z-50 justify-between items-center sticky top-0">
         <NavLink
           to={"/"}
@@ -130,7 +129,6 @@ export default function Nav() {
         </button>
       </nav>
 
-      {/* Mobile side menu */}
       <div
         className={`fixed top-14 right-0 z-40 flex flex-col items-end gap-3 p-4 md:hidden transition-opacity duration-200 ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
       >
@@ -164,7 +162,6 @@ export default function Nav() {
         </div>
       </div>
 
-      {/* Backdrop */}
       {open && (
         <div
           className="fixed inset-0 z-30 md:hidden"

@@ -23,7 +23,6 @@
   --animate-projectUp: projectUp 0.5s ease;
   --animate-projectDown: projectDown 0.5s ease forwards;
   --animate-bg-animation-home: bg-animation-home 5s linear infinite;
-
   @keyframes projectUp {
     0% {
       transform: scaleX(0);
@@ -133,10 +132,12 @@ body {
   animation: projectDown 0.3s ease forwards;
 }
 
-.work-item:hover span::before {
+.work-item:hover span::before,
+.work-item--active span::before {
   animation: projectUp 0.5s ease forwards;
 }
 
-.work-item:hover span {
+.work-item:hover span,
+.work-item--active span {
   color: rgb(29, 78, 216);
 }

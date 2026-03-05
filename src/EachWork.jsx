@@ -3,7 +3,6 @@ import WorksData from "./WorksData.json";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import { Link } from "react-router";
-import PixelCanvas from "./PixelCanvas";
 import useSeo from "./useSeo";
 
 function AnimatedNavLink({ to, text }) {
@@ -174,24 +173,24 @@ export default function EachWork() {
 
   return (
     <>
-      <div className="u-container">
-        <div ref={trackerRef} className={`h-80 md:h-160 trackerImg`}>
+      <div className="u-container py-8 md:py-12">
+        <div ref={trackerRef} className="h-80 md:h-160 trackerImg mb-6 md:mb-8">
           <a target="_blank" href={iframe ? iframe : ""}>
-            <PixelCanvas
+            <img
               src={`../${firstimg}`}
-              className={`object-contain h-full w-full`}
+              className="object-contain h-full w-full"
               alt={name}
             />
           </a>
 
           <div
             ref={trackedRef}
-            className={`${iframe ? `trackedImg` : `hidden`}  fixed text-2xl bg-blue-700 px-2 rounded-full text-white pointer-events-none -translate-x-1/2 -translate-y-1/2`}
+            className={`${iframe ? `trackedImg` : `hidden`} fixed text-2xl bg-blue-700 px-2 rounded-full text-white pointer-events-none -translate-x-1/2 -translate-y-1/2`}
           >
             Voir 👀
           </div>
         </div>
-        <div className="flex items-end flex-wrap h-auto md:h-16 mb-4">
+        <div className="flex items-end flex-wrap h-auto md:h-16 mb-6 md:mb-8">
           {name.split("").map((letter, index) => {
             return (
               <div className="flex" key={index}>
@@ -203,7 +202,7 @@ export default function EachWork() {
           })}
         </div>
         {role && (
-          <div className="flex flex-wrap gap-2 md:gap-4 text-white my-4">
+          <div className="flex flex-wrap gap-2 md:gap-4 text-white mb-4 md:mb-6">
             <span>Rôle{role.length > 1 ? "s" : ""} :</span>
             {role.map((e, i) => {
               return (
@@ -219,7 +218,7 @@ export default function EachWork() {
         )}
 
         {category && (
-          <div className="flex flex-wrap gap-2 md:gap-4 text-white my-4">
+          <div className="flex flex-wrap gap-2 md:gap-4 text-white mb-4 md:mb-6">
             <span>Catégorie{category.length > 1 ? "s" : ""} :</span>
             {category.map((e, i) => {
               return (
@@ -234,9 +233,9 @@ export default function EachWork() {
           </div>
         )}
 
-        <div className="u-grid text-white">{content}</div>
+        <div className="u-grid text-white mb-6 md:mb-8">{content}</div>
         {tags && (
-          <div className="flex flex-wrap gap-2 md:gap-3 my-4">
+          <div className="flex flex-wrap gap-2 md:gap-3 mb-6 md:mb-8">
             <span className="text-white">
               Technologie{tags.length > 1 ? "s" : ""} :
             </span>
@@ -254,10 +253,10 @@ export default function EachWork() {
         )}
 
         {medias && (
-          <div className="gap-4 text-white grid grid-cols-1 md:grid-cols-2">
+          <div className="gap-4 md:gap-6 text-white grid grid-cols-1 md:grid-cols-2 mb-8 md:mb-10">
             {medias.map((e, i) => {
               return (
-                <PixelCanvas
+                <img
                   key={i}
                   src={`../${e}`}
                   className="object-contain max-h-[800px] w-full"
@@ -268,7 +267,7 @@ export default function EachWork() {
           </div>
         )}
 
-        <div className="text-white justify-between flex my-10">
+        <div className="text-white justify-between flex mt-10 md:mt-12">
           <AnimatedNavLink
             to={`/realisations/${isFirstIndex ? lastIndex : WorksData.Works[index - 1].slug}`}
             text="Précédent"

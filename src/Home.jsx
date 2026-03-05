@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <Canvas className="!absolute top-0 left-0 -z-10">
+      <Canvas className="!absolute top-0 left-0 -z-10 !hidden md:!block">
         <color attach="background" args={["black"]} />
 
         <SphereParticles />

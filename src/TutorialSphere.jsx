@@ -25,7 +25,6 @@ export default function TutorialSphere() {
 
   return (
     <div className="px-4 flex flex-col gap-10 md:gap-14 py-10 md:py-16 max-w-3xl mx-auto text-white">
-      {/* Header */}
       <div className="flex flex-col gap-4">
         <Link
           to="/"
@@ -53,7 +52,6 @@ export default function TutorialSphere() {
         </p>
       </div>
 
-      {/* Section 1 */}
       <div className="flex flex-col gap-4">
         <h2 className="text-lg md:text-2xl font-bold">Le setup</h2>
         <p className="text-white/80 leading-relaxed">
@@ -104,11 +102,6 @@ const originalPos = new Float32Array(
   geo.attributes.position.array
 );`}
         />
-        <p className="text-white/80 leading-relaxed">
-          64 segments sur desktop, 32 sur mobile. Le trade-off performance vs
-          densité visuelle. La copie des positions originales est importante :
-          c'est la "mémoire" de la sphère, sa forme au repos.
-        </p>
       </div>
 
       <div className="flex flex-col gap-4">
@@ -141,9 +134,7 @@ if (discriminant >= 0) {
         />
         <p className="text-white/80 leading-relaxed">
           Plutôt que d'utiliser le raycaster natif de Three.js (qui est optimisé
-          pour les meshes), je fais le calcul d'intersection analytiquement.
-          C'est plus rapide pour une sphère : une simple équation du second
-          degré.
+          pour les meshes), je fais le calcul d'intersection avec un équation.
         </p>
       </div>
 
@@ -167,13 +158,11 @@ if (discriminant >= 0) {
   const distance = Math.sqrt(dx * dx + dy * dy + dz * dz);
 
   if (distance < radius) {
-    // Force inversement proportionnelle à la distance
     const force = (1 - distance / radius) * strength;
     positions[i3] += (dx / distance) * force;
     positions[i3 + 1] += (dy / distance) * force;
     positions[i3 + 2] += (dz / distance) * force;
   } else {
-    // Retour élastique vers la position originale
     positions[i3] += (original[i3] - positions[i3]) * 0.05;
     positions[i3 + 1] += (original[i3+1] - positions[i3+1]) * 0.05;
     positions[i3 + 2] += (original[i3+2] - positions[i3+2]) * 0.05;
@@ -182,9 +171,9 @@ if (discriminant >= 0) {
         />
         <p className="text-white/80 leading-relaxed">
           Le <code className="text-white bg-white/10 px-1">0.05</code> dans le
-          retour élastique crée un lerp (interpolation linéaire). Les particules
-          ne reviennent pas d'un coup à leur position, elles y glissent
-          doucement. C'est ça qui donne l'effet organique.
+          retour élastique crée une interpolation linéaire. Les particules ne
+          reviennent pas d'un coup à leur position, elles y glissent doucement.
+          C'est ça qui donne l'effet satisfaisant.
         </p>
       </div>
 
@@ -197,9 +186,8 @@ if (discriminant >= 0) {
           <li className="flex gap-2">
             <span className="text-white/40 shrink-0">&mdash;</span>
             <span>
-              <strong className="text-white">Segments adaptatifs</strong> : 32
-              sur mobile vs 64 sur desktop. Moins de points = moins de calculs
-              par frame.
+              <strong className="text-white">Segments adaptatifs</strong> 64 sur
+              desktop. Moins de points = moins de calculs par frame.
             </span>
           </li>
           <li className="flex gap-2">
@@ -214,8 +202,8 @@ if (discriminant >= 0) {
             <span className="text-white/40 shrink-0">&mdash;</span>
             <span>
               <strong className="text-white">Intersection analytique</strong> :
-              un calcul mathématique simple plutôt qu'un raycaster traversant
-              toute la géométrie.
+              un calcul mathématique plutôt qu'un raycaster traversant toute la
+              géométrie.
             </span>
           </li>
           <li className="flex gap-2">
@@ -248,20 +236,16 @@ if (discriminant >= 0) {
         <p className="text-white/80 leading-relaxed">
           Oui, c'est tout. Le matériau est un simple{" "}
           <code className="text-white bg-white/10 px-1">pointsMaterial</code>{" "}
-          bleu avec une taille de 0.02. Pas de shaders custom, pas de textures,
-          pas de postprocessing. La beauté vient de l'interaction, pas de la
-          complexité du rendu.
+          bleu avec une taille de 0.02.
         </p>
       </div>
 
-      {/* Conclusion */}
       <div className="flex flex-col gap-4 border-t border-white/10 pt-10">
         <p className="text-white/80 leading-relaxed">
           Ce qui rend cette sphère intéressante, c'est pas sa complexité
           technique. C'est le fait qu'elle réagit. On a un retour physique de
           nos mouvements, et ça crée un lien entre l'utilisateur et la page.
-          C'est tout le principe du développement web créatif : transformer des
-          maths et du code en quelque chose qu'on a envie de toucher.
+          C'est tout le principe du développement web créatif.
         </p>
         <div className="flex gap-4 flex-wrap">
           <Link

@@ -100,6 +100,12 @@ body {
   top: unset !important;
 }
 
+@media and (max-width: 767px) {
+  .lil-gui {
+    display: none;
+  }
+}
+
 .grid-stagger {
   width: calc(100svw / 9);
   height: 100svh;

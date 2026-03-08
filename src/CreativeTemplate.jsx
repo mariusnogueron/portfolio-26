@@ -1,13 +1,10 @@
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import { Link } from "react-router";
+import { NavLink } from "react-router";
+import { Circle } from "lucide-react";
 
-const roles = [
-  "Creative Developer",
-  "Direction Artistique",
-  "Motion Designer",
-  "Photographe",
-];
+const roles = ["Creative Developer", "Motion Designer", "Photographe"];
 
 export default function CreativeTemplate() {
   const containerRef = useRef(null);
@@ -67,6 +64,17 @@ export default function CreativeTemplate() {
           </div>
         ))}
 
+        <div className="overflow-hidden mt-2">
+          <NavLink
+            to={"/realisations"}
+            className={({ isActive }) =>
+              `creativeword block pointer-events-auto ${isActive ? "active-navLink" : ""} text-white/60 text-xs md:text-2xl border border-white/20 px-3 py-1.5 hover:text-white hover:border-white/60 transition-colors duration-200`
+            }
+          >
+            Réalisations &#9786;
+          </NavLink>
+        </div>
+
         <div className="md:hidden overflow-hidden mt-6">
           <span className="creativeword flex items-center gap-2 text-white text-sm">
             <span className="block rounded-full w-2.5 h-2.5 bg-green-600 animate-pulse" />
@@ -78,7 +86,7 @@ export default function CreativeTemplate() {
       <Link
         ref={ctaRef}
         to="/tutoriel/sphere-threejs"
-        className="hidden md:block absolute left-1/2 -translate-x-1/2 bottom-12 opacity-0 text-white/60 text-xs md:text-sm border border-white/20 px-3 py-1.5 hover:text-white hover:border-white/60 transition-colors duration-200"
+        className="hidden md:block absolute left-1/2 -translate-x-1/2 top-32 opacity-0 text-white/60 text-xs md:text-sm border border-white/20 px-3 py-1.5 hover:text-white hover:border-white/60 transition-colors duration-200"
       >
         Comment j'ai fait ça ?
       </Link>

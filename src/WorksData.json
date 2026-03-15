@@ -8,8 +8,8 @@
       "firstimg": "./img/maddelaine/maddelaine-home.webp",
       "date": "2025",
       "tags": ["figma"],
-      "content": "Une amie s'est lancée dans la réalisation de sac fait main. Basé sur certains critères qu'elle m'a donnée, j'ai transformé son idée en réalisation concrète prêt à être intégrée.",
-      "category": ["Client", "Projet personnel"],
+      "content": "Une amie s'est lancée dans la réalisation de sacs faits main. En me basant sur les critères qu'elle m'a donné, j'ai transformé son idée en une maquette concrète prête à être intégrée. Le projet comprend l'ensemble du parcours e-commerce : page d'accueil, catalogue produits, fiches produit, panier et tunnel de paiement, le tout décliné en versions desktop et mobile.",
+      "category": ["Demande Client"],
       "moremedias": [
         "./img/maddelaine/maddelaine-home.webp",
         "./img/maddelaine/maddelaine-figma-desk-components.webp",
@@ -35,7 +35,7 @@
       "firstimg": "./img/portfolio-photo/pic.webp",
       "date": "2025",
       "tags": ["lightroom"],
-      "content": "Une collection de tout ce que je sais faire en photographie.",
+      "content": "Une collection de tout ce que je sais faire en photographie. On y retrouve du portrait, du paysage, de la street photography et de la photo événementielle. Chaque cliché est retouché sur Lightroom.",
       "category": ["Projet personnel"],
       "iframe": "https://photo.mariusnogueron.fr"
     },
@@ -47,7 +47,7 @@
       "firstimg": "./img/love/pic.webp",
       "date": "2025",
       "tags": ["after effect"],
-      "content": "Utilisation d'un Mesh Warp et d'un CC BALL ACTION pour les effets principaux.",
+      "content": "Utilisation d'un Mesh Warp et d'un CC Ball Action pour les effets principaux. L'objectif était de créer une animation organique.",
       "category": ["Projet personnel"],
       "moremedias": ["./img/love/love-pic.webp"],
       "iframe": "https://youtube.com/shorts/j7xs411uyKo"
@@ -60,7 +60,7 @@
       "firstimg": "./img/bygin/bygin-home-desk.webp",
       "date": "2025",
       "tags": ["figma", "vuejs", "frontend"],
-      "content": "Imagination d'une marque fictive qui réalise des vinyles. En plus d'avoir réalisé l'entièreté de la maquette, j'ai créé le site web.",
+      "content": "Imagination d'une marque fictive spécialisée dans la vente de vinyles. En plus d'avoir réalisé l'entièreté de la maquette sur Figma, j'ai développé le site web en Vue.js. Le design s'inspire de l'univers musical avec une identité visuelle minimaliste et des animations soignées.",
       "category": ["Projet personnel"],
       "moremedias": [
         "./img/bygin/bygin-artists-desk.webp",
@@ -76,7 +76,7 @@
       "firstimg": "./img/turbofilm-25/turbofilm-25-1.webp",
       "date": "2025",
       "tags": ["premiere pro"],
-      "content": "Réalisation d'un film de 5 minutes en 24h pour Turbofilm 13ème édition. Un événement organisé par le Service Universitaire d’Action Culturelle de l’Université de Reims Champagne-Ardenne (URCA), il vise à promouvoir la réalisation de courts-métrages en France",
+      "content": "Réalisation d'un film de 5 minutes en 24h pour Turbofilm 13e édition. Un événement organisé par le Service Universitaire d'Action Culturelle de l'Université de Reims Champagne-Ardenne (URCA), il vise à promouvoir la réalisation de courts-métrages en France. Le défi principal résidait dans la gestion du temps : écriture, tournage, montage et étalonnage en une seule journée.",
       "category": ["Projet personnel", "Travail de Groupe"],
       "role": ["Réalisateur", "Chef Opérateur", "Ingé son", "Monteur"],
       "moremedias": [
@@ -85,7 +85,6 @@
       ],
       "iframe": "https://www.youtube.com/watch?v=4G_c363Mf6k"
     },
-
     {
       "type": "Dev",
       "name": "ThreeJs Journey",
@@ -94,8 +93,21 @@
       "firstimg": "./img/threejs/house.webp",
       "date": "2025",
       "tags": ["threejs", "frontend"],
-      "content": "Pour ce projet, utilisation de ThreeJS natif. Les textures proviennent de polyhaven.com sont sous licence CC Zero. Le sujet ici n'est pas sur la modélisation 3D à proprement parlé mais davantage du portage de la 3D sur le web",
+      "content": "Pour ce projet, utilisation de Three.js natif. Les textures proviennent de polyhaven.com et sont sous licence CC Zero. Le sujet ici n'est pas la modélisation 3D à proprement parler, mais davantage le portage de la 3D sur le web. Gestion des lumières, des ombres et des matériaux PBR directement dans le navigateur.",
       "iframe": "https://3d-house-chi.vercel.app/"
+    },
+    {
+      "type": "3D",
+      "name": "WaterFog",
+      "slug": "jeu-vr",
+      "img": "./img/waterfog/waterfog.webp",
+      "firstimg": "./img/waterfog/waterfog.webp",
+      "date": "2025",
+      "tags": ["Unity", "Blender", "C#"],
+      "category": ["Travail de Groupe", "Travail Universitaire"],
+      "role": ["Tout l'aspect graphique"],
+      "content": "Création d'un jeu VR sur Unity. Le jeu doit tourner sur un casque VR (aussi puissant qu'un téléphone), donc le nombre de vertices doit être très limité pour garantir de bonnes performances. C'est pour cela que la majorité des assets sont en low poly. Tous les assets, y compris le sound design, sont faits main.",
+      "iframe": "https://wra507d.mariusnogueron.fr/"
     },
     {
       "type": "Dev",
@@ -105,7 +117,7 @@
       "firstimg": "./img/hebergement/apache-sites-available.webp",
       "date": "2025",
       "tags": ["apache", "debian", "vps", "nas"],
-      "content": "J'ai un VPS avec plusieurs noms de domaines, me servant chacun à des choses différentes. photos.mariusnogueron.fr qui est mon portfolio photo. lab.mariusnogueron.fr, mon lieu d'expérimentation. https://investir.mariusnogueron.fr/ un guide pour débuter l'investissement en bourse. J'ai également mis en place plusieurs CI/CD pour le déploiement de ces projets. Des Dockerfiles pour le suivi des visites sur mes sites. J'ai également mis en place un NAS pour le stockage et la mise en commun de mes données.",
+      "content": "J'ai un VPS avec plusieurs noms de domaine, me servant chacun à des besoins différents : photos.mariusnogueron.fr pour mon portfolio photo, investir.mariusnogueron.fr pour un guide sur l'investissement en bourse. J'ai également mis en place plusieurs pipelines CI/CD pour le déploiement automatique de ces projets, ainsi que des Dockerfiles pour le suivi des visites sur mes sites. Un NAS complète l'infrastructure pour le stockage et la mise en commun de mes données.",
       "category": ["Projet personnel"]
     },
     {
@@ -116,7 +128,7 @@
       "firstimg": "./img/affiches/1.webp",
       "date": "2025",
       "tags": ["photoshop", "illustrator", "blender"],
-      "content": "Objectif de création en un temps limité de 4h. Design des affiches et 3D.",
+      "content": "Objectif de création en un temps limité de 4h par affiche. Les affiches sont intégrés dans une télé modélisée en 3D sur Blender.",
       "category": ["Projet personnel"],
       "moremedias": [
         "./img/affiches/1.webp",
@@ -134,7 +146,7 @@
       "firstimg": "./img/iphone/iphone-motion.webp",
       "date": "2025",
       "tags": ["after effect"],
-      "content": "Motion avec l'UI kit de IOS",
+      "content": "Motion design réalisé avec l'UI Kit d'iOS sur After Effects. L'animation met en scène des transitions fluides entre les écrans natifs d'un iPhone.",
       "iframe": "https://youtube.com/shorts/NH6QR8Sk-BM"
     },
     {
@@ -145,8 +157,8 @@
       "firstimg": "./img/ocean/ocean.webp",
       "date": "2025",
       "tags": ["blender"],
-      "content": "Simulation d'océan faite avec Blender. Ajout de ToonShader sur les vagues.",
-      "category": [""],
+      "content": "Simulation d'océan réalisée avec Blender. Un Toon Shader a été appliqué sur les vagues pour obtenir un rendu stylisé entre réalisme et cel-shading. Le travail porte principalement sur le paramétrage de la simulation de fluides et l'éclairage de la scène.",
+      "category": ["Projet personnel"],
       "iframe": "https://youtu.be/IyVXjwpgh2M"
     },
     {
@@ -157,7 +169,7 @@
       "firstimg": "./img/festival-mmi-2024/merci-maman-desk.webp",
       "date": "2024",
       "tags": ["frontend", "gsap"],
-      "content": "Création de la maquette et du site web. La démarche porte sur le fait de remercier les mères et l'importance qu'elles peuvent avoir sur les développement de leurs enfants",
+      "content": "Création de la maquette et du site web pour le festival MMI. La démarche porte sur le fait de remercier les mères et l'importance qu'elles peuvent avoir sur le développement de leurs enfants. Les animations sont réalisées avec GSAP.",
       "category": ["Projet personnel"],
       "iframe": "https://festivalmmi.vercel.app/"
     },
@@ -169,7 +181,7 @@
       "firstimg": "./img/touchdesigner/POINTCLOUD/pic.webp",
       "date": "2025",
       "tags": ["touchdesigner", "scaniverse"],
-      "content": "Utilisation de scaniverse pour scanner en 3D l'environnement, puis export du fichier en PLY pour pouvoir l'exploiter sur touchdesigner et faire en sorte que les basses fassent bouger les coordonnées des points.",
+      "content": "Utilisation de Scaniverse pour scanner en 3D l'environnement, puis export du fichier en PLY pour l'exploiter sur TouchDesigner. Les basses du signal audio sont isolées pour faire varier les coordonnées des points du nuage en temps réel. Le résultat est une visualisation immersive où l'espace physique se déforme au rythme de la musique.",
       "category": ["Projet personnel"],
       "moremedias": [
         "./img/touchdesigner/POINTCLOUD/pic.webp",
@@ -186,13 +198,13 @@
       "firstimg": "./img/touchdesigner/SOUNDREACTIVE/pic.webp",
       "date": "2025",
       "tags": ["touchdesigner", "scaniverse"],
-      "content": "Analyse du son en filtrant les basses, variation des normals appliqués au modèle 3D, permettant de le faire bouger au rythme de la musique",
+      "content": "Analyse du son en filtrant les basses, puis variation des normales appliquées au modèle 3D, permettant de le faire bouger au rythme de la musique. Le setup dans TouchDesigner repose sur un pipeline audio-to-geometry où chaque fréquence influence un paramètre visuel distinct.",
       "category": ["Projet personnel"],
       "moremedias": [
         "./img/touchdesigner/SOUNDREACTIVE/pic.webp",
         "./img/touchdesigner/SOUNDREACTIVE/pic2.webp"
       ],
-      "iframe": " https://youtu.be/hKYuEyl9LXM"
+      "iframe": "https://youtu.be/hKYuEyl9LXM"
     },
     {
       "type": "Vidéo",
@@ -202,7 +214,7 @@
       "firstimg": "./img/turbofilm-26/turbofilm-26.webp",
       "date": "2026",
       "tags": ["premiere pro", "after effect"],
-      "content": "Réalisation d'un film de 5 minutes en 24h pour Turbofilm 14ème édition avec plusieurs contraintes et thème imposé. Un événement organisé par le Service Universitaire d’Action Culturelle de l’Université de Reims Champagne-Ardenne (URCA), il vise à promouvoir la réalisation de courts-métrages en France",
+      "content": "Réalisation d'un film de 5 minutes en 24h pour Turbofilm 14e édition, avec plusieurs contraintes et un thème imposé. Un événement organisé par le Service Universitaire d'Action Culturelle de l'Université de Reims Champagne-Ardenne (URCA), il vise à promouvoir la réalisation de courts-métrages en France. J'ai intégré des effets visuels réalisés sur After Effects.",
       "category": ["Projet personnel", "Travail de Groupe"],
       "iframe": "https://youtu.be/e19LRAUHs54?si=5G3Ld7f3B-HrZPPS"
     },
@@ -214,7 +226,7 @@
       "firstimg": "./img/vilk/vilk.webp",
       "date": "2026",
       "tags": ["after effect"],
-      "content": "Motion pour un artiste musical que j'apprécie",
+      "content": "Motion design réalisé pour un artiste musical que j'apprécie. L'animation joue sur la typographie cinétique et les transitions rythmées, synchronisées avec le morceau. Le style graphique est épuré pour laisser la musique au premier plan.",
       "category": ["Projet personnel"],
       "iframe": "https://youtu.be/rASXic0qfnE"
     },
@@ -226,7 +238,7 @@
       "firstimg": "./img/donut/SCR-20260215-pxuj.png",
       "date": "2023",
       "tags": ["Blender", "3D"],
-      "content": "Premier projet fait sur Blender",
+      "content": "Premier projet réalisé sur Blender, suivant le tutoriel emblématique de Blender Guru. Ce projet m'a permis d'apprendre les bases de la modélisation, du texturing, de l'éclairage et du rendu avec Cycles.",
       "category": ["Projet personnel"],
       "iframe": "https://youtube.com/shorts/Dqcuf_JCdxk"
     }
